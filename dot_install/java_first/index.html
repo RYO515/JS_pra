@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- lang属性を指定 -->
+<html lang="ja">
+<head>
+    <!-- 文字タイプを指定 -->
+    <meta charset="utf-8">
+    <title>JavaScript Practice</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* マウスカーソルの指定 */
+            cursor: pointer;
+            margin: 0 8px 8px 0;
+        }
+        .circle {
+            background: pink;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- div: ブロック要素としてまとめて扱う -->
+    <!-- id: CSS,JavaScript適用箇所 -->
+    <div class="box" id="target1"></div>
+    <div class="box" id="target2"></div>
+    <div class="box" id="target3"></div>
+
+    <script>
+        // ブラウザが厳密なエラーチェック
+        'use strict';
+        // 指定したIdを文章全体から取得
+        // addEventListenerで何かが起きたら指定の処理をする
+        // >= アロー関数
+        const target1 = document.getElementById('target1');
+        const target2 = document.getElementById('target2');
+        const target3 = document.getElementById('target3');
+        
+        target1.addEventListener('click', () => {
+            // document.getElementById('target').style.background = 'pink';
+            // // 要素の高さや幅の50%を丸くして正円を作成
+            // document.getElementById('target').style.borderRadius = '50%';
+            // // toggle: 二つの状態を交互に切り替えられるような仕組み
+            target1.classList.toggle('circle');
+         });
+        target2.addEventListener('click', () => {
+            target2.classList.toggle('circle');
+         });
+        target3.addEventListener('click', () => {
+            target3.classList.toggle('circle');
+         });
+    </script>
+</body>
+</html>
