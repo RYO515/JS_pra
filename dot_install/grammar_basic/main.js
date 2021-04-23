@@ -1,7 +1,7 @@
 'use strict';
 
-// console.log('Hello world from main.js!');
+console.log('5' * 3);
+console.log('5' - 3);
 
-const price = 150;
-
-console.log(price + 140);
+console.log('5' + 3);
+console.log(parseInt('5', 10) * 3);
