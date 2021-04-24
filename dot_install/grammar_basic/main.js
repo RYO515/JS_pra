@@ -1,7 +1,18 @@
 'use strict';
 
-console.log('5' * 3);
-console.log('5' - 3);
+const score = 60;
+const name = 'taguchi';
 
-console.log('5' + 3);
-console.log(parseInt('5', 10) * 3);
+// if (score >= 50) {
+//     if (name === 'taguchi') {
+//         console.log('Good job');
+//     }
+// }
+
+// && なおかつ　(AND) //
+// || もしくは //
+// ! 〜ではない //
+
+if (score >= 50 && name === 'taguchi') {
+    console.log('Good job');
+}
