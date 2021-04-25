@@ -1,10 +1,8 @@
 'use strict';
 
 {
-    const scores = [80, 90, 40, 70];
-    scores.splice(1, 1, 40, 50);
+    const prices = [100, 100, 200];
 
-    for (let i = 0; i < scores.length; i++) {
-        console.log(`Score ${i}: ${scores[i]}`);
-    }
+    const updatePrices = prices.map(price =>  price + 20);
+    console.log(updatePrices);
 }
