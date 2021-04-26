@@ -3,15 +3,18 @@
 {
     const point = {
         x: 100,
-        y: 180,
+        y: 100,
     };
 
-    point.x = 120;
-    // point['x'] = 120;
+    // const keys = Object.keys(point);
+    // keys.forEach(key => {
+    //     console.log(`Key: ${key} Value: ${point[key]}`);
+    // });
 
-    // console.log(point.x);
-    // console.log(point['y']);
-    point.z = 90;
-    delete point.y;
-    console.log(point);
+    const points = [
+        {x: 30, y: 20},
+        {x: 10, y: 50},
+        {x: 40, y: 40},
+    ];
+    console.log(points[1].y);
 }
