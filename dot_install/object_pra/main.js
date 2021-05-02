@@ -1,21 +1,23 @@
 'use strict';
 
 {
-    let x = 1;
-    let y = x;
-    x = 5;
-    console.log(x);
-    console.log(y);
+    const scores = [10, 3, 9];
 
-    let x  = [1, 2];
-    let y = x;
-    x[0] = 5;
-    console.log(x);
-    console.log(y);
+    let sum = 0;
 
-    let x = [1, 2];
-    let y = [...x];
-    x[0] = 5;
-    console.log(x);
-    console.log(y);
+    scores.forEach(score => {
+        sum += score;
+    });
+    
+    const avg = sum / scores.length;
+    
+    // console.log(sum);
+    // console.log(avg);
+
+    console.log(Math.floor(avg));
+    console.log(Math.ceil(avg));
+    console.log(Math.round(avg));
+    console.log(avg.toFixed(3));
+
+    console.log(Math.random());
 }
